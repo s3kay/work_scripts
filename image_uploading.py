@@ -7,8 +7,8 @@ import glob
 with open('refs.csv', 'r') as f:
     reader = csv.reader(f)
     refs = list(reader)
-
-
+    
+    
 #set working dir and look for image
 os.chdir('F:\\python\\work_scripts')
 fname = glob.glob('*.jpg') or glob.glob('*.jpeg')
@@ -18,6 +18,7 @@ fname = glob.glob('*.jpg') or glob.glob('*.jpeg')
 src = 'F:\\python\\work_scripts\\' + "%s".join(fname)
 x = 0
 i = 0
+
 
 #perform rename 
 while i < len(refs):
